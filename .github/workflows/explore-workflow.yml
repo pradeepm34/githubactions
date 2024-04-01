@@ -1,0 +1,17 @@
+name: AWS Github Action Github IAM user
+run-name: Github Action with IAM user aws-access-key-id
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    name: list repo content
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: list repo content
+        run: |
+          git ls-tree -r main --name-only
+          echo "Successful"
