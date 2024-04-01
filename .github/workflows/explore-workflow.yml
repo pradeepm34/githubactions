@@ -1,5 +1,5 @@
-name: AWS Github Action Github IAM user
-run-name: Github Action with IAM user aws-access-key-id
+name: Explore github workflow
+run-name: List git main branch content
 on:
   push:
     branches:
